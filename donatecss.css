@@ -1,0 +1,259 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6e6;
+    color: #333; /* Dark text for readability */
+}
+
+header {
+    background-color: #c0392b; /* Dark red header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+
+nav {
+    background-color: #e74c3c; /* Lighter red for navigation */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Bright yellow on hover for contrast */
+}
+
+h2 {
+    color: #c0392b; /* Dark red for section titles */
+    border-bottom: 2px solid #e74c3c; /* Underline effect */
+    padding-bottom: 5px;
+    margin-top: 20px; /* Space above section titles */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: white; /* White background for sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s; /* Smooth transform effect */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+a {
+    color: #c0392b; /* Dark red links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+    color: #e74c3c; /* Lighter red on hover */
+}
+
+#donor-form {
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px; /* Add padding */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffe6e6; /* Light red background color */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+}
+
+button:hover {
+    background-color: #e74c3c; /* Darker green on hover */
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+
+
+footer {
+    text-align: left; /* Align text to the left */
+    padding: 40px 20px; /* Increased padding for better spacing */
+    background: #c0392b; /* Light beige background */
+    color: #ffff; /* Dark text for readability */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 5px solid #e74c3c; /* Optional top border for separation */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Space out sections evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding-left: 20px; /* Shift content to the right */
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow equally */
+    min-width: 200px; /* Minimum width for responsiveness */
+    margin: 10px; /* Margin between sections */
+}
+
+.footer-section h2 {
+    margin-bottom: 10px; /* Space below headings */
+    color: #fff; /* Dark red for headings */
+}
+
+.footer-section p {
+    margin: 5px 0; /* Reduced margin for better spacing */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.footer-section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-section ul li {
+    margin: 5px 0; /* Space between list items */
+}
+
+.footer-section a {
+    color: #fff; /* Dark red for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-section a:hover {
+    color: #f0ec09; /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Space above copyright */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove margin */
+    font-size: 0.8em; /* Smaller font size for copyright */
+}
+
+/* Social Media Icons */
+.footer-section.social a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer-section.social img {
+    width: 24px; /* Set icon size */
+    height: 24px; /* Set icon size */
+    transition: transform 0.3s; /* Smooth transform effect */
+}
+
+.footer-section.social img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}

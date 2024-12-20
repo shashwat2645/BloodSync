@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Information</title>
+    <link rel="stylesheet" href="donatecss.css">
+</head>
+<body>
+    <header>
+        <h1>Become a Blood Donor</h1>
+        <p>Your donation can save lives!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#eligibility">Eligibility</a></li>
+            <li><a href="#donation-process">Process</a></li>
+            <li><a href="#types-of-donation">Types</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#myths-facts">Myths & Facts</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#preparation">Preparation</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#donor-form">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="eligibility">
+            <h2>Eligibility Criteria</h2>
+            <ul>
+                <li>Age: 17 years or older</li>
+                <li>Weight: At least 110 pounds</li>
+                <li>Health: No recent surgeries or infections</li>
+                <li>Medications: Check with us if you're unsure</li>
+            </ul>
+        </section>
+
+        <section id="donation-process">
+            <h2>Donation Process</h2>
+            <ol>
+                <li>Registration: Fill out a donor form.</li>
+                <li>Health Screening: Brief health questionnaire and vital signs check.</li>
+                <li>Donation: Blood collection takes about 10-15 minutes.</li>
+                <li>Post-Donation: Rest and refreshments provided.</li>
+            </ol>
+        </section>
+
+        <section id="types-of-donation">
+            <h2>Types of Blood Donation</h2>
+            <ul>
+                <li>Whole Blood Donation</li>
+                <li>Plasma Donation</li>
+                <li>Platelet Donation</li>
+                <li>Double Red Cell Donation</li>
+            </ul>
+        </section>
+
+        <section id="benefits">
+            <h2>Benefits of Donating Blood</h2>
+            <h3>For Recipients:</h3>
+            <ul>
+                <li>Saves lives and supports medical treatments.</li>
+                <li>Helps in emergencies and surgeries.</li>
+            </ul>
+            <h3>For Donors:</h3>
+            <ul>
+                <li>Improved cardiovascular health.</li>
+                <li>Free health screenings.</li>
+                <li>A sense of fulfillment and community contribution.</li>
+            </ul>
+        </section>
+
+        <section id="myths-facts">
+            <h2>Myths and Facts</h2>
+            <p><strong>Myth:</strong> Donating blood is painful.</p>
+            <p><strong>Fact:</strong> It’s a quick and safe process.</p>
+        </section>
+
+        <section id="faqs">
+            <h2>Frequently Asked Questions</h2>
+            <ul>
+                <li>How often can I donate blood?</li>
+                <li>What should I do before and after donating?</li>
+                <li>Is there a risk of infection?</li>
+            </ul>
+        </section>
+
+        <section id="preparation">
+            <h2>How to Prepare for Donation</h2>
+            <ul>
+                <li>Stay hydrated and eat a healthy meal.</li>
+                <li>Avoid alcohol and heavy exercise before donation.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>For more information, contact your local blood donation center.</p>
+            <p>Phone: 1-800-123-4567</p>
+            <p>Website: <a href="https://www.bloodsync.org">www.bloodsync.org</a></p>
+        </section>
+
+        <section id="donor-form">
+            <h2>Donor Registration Form</h2>
+            <form id="donor-form" action="/submit-donor-info" method="POST">
+                <h2>Blood Donor Registration Form</h2>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" max="65" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <label for="bloodType">Blood Type:</label>
+                    <select id="bloodType" name="bloodType" required>
+                        <option value="">Select Blood Type</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="medicalHistory">Medical History:</label>
+                    <textarea id="medicalHistory" name="medicalHistory" rows="4" placeholder="Please list any medical conditions, medications, or allergies."></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <label for="donationFrequency">How often do you donate blood?</label>
+                    <select id="donationFrequency" name="donationFrequency" required>
+                        <option value="">Select Frequency</option>
+                        <option value="first_time">First Time</option>
+                        <option value="once_a_year">Once a Year</option>
+                        <option value="twice_a_year">Twice a Year</option>
+                        <option value="more_than_twice">More than Twice a Year</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="consent">Consent:</label>
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I consent to the collection and use of my personal information for blood donation purposes.</label>
+                </div>
+            
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Blood Sync</h2>
+                <p>We are a company dedicated to providing the best services to our customers. Our mission is to deliver quality and excellence in everything we do.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@bloodsync.com</p>
+                <p>Phone: +919421553661</p>
+                <p>Address: ABCD</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Blood Sync. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
